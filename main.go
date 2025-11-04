@@ -8,9 +8,15 @@ import (
 	"github.com/Arterning/go-rag/handlers"
 	"github.com/Arterning/go-rag/services"
 	"github.com/gin-gonic/gin"
+	"github.com/joho/godotenv"
 )
 
 func main() {
+	// 0. 加载 .env 文件
+	if err := godotenv.Load(); err != nil {
+		log.Println("未找到 .env 文件，使用默认配置")
+	}
+
 	// 1. 初始化数据库
 	log.Println("初始化数据库...")
 	if err := database.InitDB(); err != nil {
