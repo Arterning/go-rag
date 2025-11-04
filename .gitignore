@@ -1,0 +1,38 @@
+# Go 相关
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+go.work
+
+# 依赖目录
+vendor/
+
+# 数据库文件
+*.db
+*.sqlite
+*.sqlite3
+
+# 环境变量文件
+.env
+
+# 临时文件
+temp/
+tmp/
+
+# 日志文件
+*.log
+
+# IDE 相关
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 操作系统相关
+.DS_Store
+Thumbs.db
